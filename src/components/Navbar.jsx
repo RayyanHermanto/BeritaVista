@@ -9,9 +9,9 @@ function Navbar({ onSearch }) {
   const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim() !== "") {
-      onSearch(query);       // kirim ke App
+      onSearch(query);
     }
-    setIsSearching(false);   // balik ke tombol setelah submit
+    setIsSearching(false);
     setQuery("");
   };
 
@@ -19,7 +19,7 @@ function Navbar({ onSearch }) {
     <nav className="navbar">
       <div className="navbar-left">
         <img
-          src="logo.png"
+          src="logo1.png"
           alt="Logo"
           className="logo"
           style={{ cursor: "pointer" }}

@@ -26,13 +26,6 @@ function ToWebButton({ url }) {
 }
 
 function App() {
-  const dummyNews = [
-    { id: 1, title: "AI Mengubah Industri Teknologi", date: "2025-08-18", imageUrl: "/dummy.png", content: "AI semakin banyak digunakan di berbagai industri untuk meningkatkan produktivitas." },
-    { id: 2, title: "React 19 Resmi Dirilis", date: "2025-08-17", content: "React 19 membawa banyak fitur baru termasuk server components dan peningkatan performance." },
-    { id: 3, title: "OpenAI Luncurkan GPT-5", date: "2025-08-16", content: "GPT-5 memiliki kemampuan reasoning yang lebih baik dan dukungan multimodal." },
-    { id: 4, title: "Vite Semakin Populer di Frontend Dev", date: "2025-08-15", content: "Vite menjadi pilihan utama developer karena build super cepat dan dukungan plugin ekosistem yang luas." },
-  ];
-
   const [selectedNews, setSelectedNews] = useState(null);
   const [articles, setArticles] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -125,9 +118,9 @@ function App() {
           <div className="news-list">
             {isSearch && (
               <Carousel 
-                items={carouselItem.current} // langsung ambil objek berita utuh
+                items={carouselItem.current}
                 interval={4000}
-                onItemClick={(news) => setSelectedNews(news)} // kirim callback
+                onItemClick={(news) => setSelectedNews(news)}
               />
             )}
             {isSearch ? (

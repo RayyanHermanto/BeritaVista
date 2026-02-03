@@ -1,6 +1,5 @@
 export async function fetchNewsFromSources(query) {
   try {
-    // const response = await fetch(`https://your-render-app.onrender.com/api/news?q=${encodeURIComponent(query)}`);
     const response = await fetch(`https://backend-production-8abc.up.railway.app/api/news?q=${encodeURIComponent(query)}`);
     const data = await response.json();
 
