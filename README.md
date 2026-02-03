@@ -1,6 +1,6 @@
-# News Portal
+# BeritaVista
 
-Backend service for the News Portal application built with Node.js and Express, deployed on Railway. This backend manages API Keys securely on the server and provides endpoints for retrieving news data, including dummy news for frontend debugging. It aggregates news articles from four different news APIs simultaneously (NewsAPI, GNews, TheNewsAPI, and NewsData.io) to provide comprehensive coverage.
+Backend service for the BeritaVista application built with Node.js and Express, deployed on Railway. This backend manages API Keys securely on the server and provides endpoints for retrieving news data, including dummy news for frontend debugging. It aggregates news articles from four different news APIs simultaneously (NewsAPI, GNews, TheNewsAPI, and NewsData.io) to provide comprehensive coverage.
 
 ## Features
 
